@@ -55,7 +55,7 @@ public class BookController extends HttpServlet {
         } 
         else if (action.equals("delete")) {  
             int id = Integer.parseInt(request.getParameter("id"));
-            dao.deleteBook(id);   // DAO의 deleteBook 호출
+            dao.deleteBook(id);
             response.sendRedirect(request.getContextPath() + "/bookControl?action=list");
             return;
         }

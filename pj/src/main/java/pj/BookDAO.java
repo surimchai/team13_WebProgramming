@@ -85,9 +85,9 @@ public class BookDAO {
             pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, id);
             if (pstmt.executeUpdate() == 1) 
-                System.out.println("id = " + id + " 삭제 성공!");
+                System.out.println("id = " + id + " 삭제 성공");
         } catch (SQLException e) {
-            System.out.println("delete 실패\n");
+            System.out.println("삭제 실패\n");
         } finally {
             close();
         }
